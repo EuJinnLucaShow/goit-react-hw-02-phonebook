@@ -14,3 +14,8 @@ export const Input = styled.input`
 export const Button = styled.button`
   padding: 10px 20px;
 `;
+
+export const Text = styled.p`
+  /* padding: 10px 20px; */
+  margin-bottom: 15px;
+`;

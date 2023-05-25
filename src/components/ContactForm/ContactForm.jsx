@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
-import { Form, Input, Button } from './ContactForm.styled'
+import { Form, Input, Button, Text } from './ContactForm.styled'
 
 
 function ContactForm({ addContact, contacts }) {
@@ -41,6 +41,7 @@ function ContactForm({ addContact, contacts }) {
 
   return (
     <Form onSubmit={handleSubmit}>
+      <Text>Name</Text>
       <Input
         type="text"
         name="name"
@@ -50,6 +51,7 @@ function ContactForm({ addContact, contacts }) {
         value={name}
         onChange={handleNameChange}
       />
+      <Text>Number</Text>
       <Input
         type="tel"
         name="number"
