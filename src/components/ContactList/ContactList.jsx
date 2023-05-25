@@ -1,3 +1,5 @@
+import { ContactItems, ContactName, ContactNumber, Button } from './ContactList.styled'
+
 function ContactList({ contacts, deleteContact }) {
   return (
     <ul>
@@ -14,10 +16,11 @@ function ContactItem({ contact, deleteContact }) {
   };
 
   return (
-    <li>
-      {contact.name} - {contact.number}
-      <button onClick={handleDelete}>Delete</button>
-    </li>
+    <ContactItems>
+      <ContactName>{contact.name}</ContactName>
+      <ContactNumber>{contact.number}</ContactNumber>
+      <Button onClick={handleDelete}>Delete</Button>
+    </ContactItems>
   );
 }
 
