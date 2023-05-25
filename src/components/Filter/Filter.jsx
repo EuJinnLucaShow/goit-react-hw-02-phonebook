@@ -1,10 +1,12 @@
+import { Input } from './Filter.styled'
+
 function Filter({ filter, setFilter }) {
   const handleFilterChange = (event) => {
     setFilter(event.target.value);
   };
 
   return (
-    <input
+    <Input
       type="text"
       name="filter"
       placeholder="Search by name"

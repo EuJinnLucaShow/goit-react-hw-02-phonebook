@@ -9,10 +9,17 @@ export const Form = styled.form`
 export const Input = styled.input`
   padding: 10px;
   margin-bottom: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: 0;
+  box-shadow: 0 1px 6px 0 #20212447;
 `;
 
-export const Button = styled.button`
+export const Button = styled.button`  
   padding: 10px 20px;
+  /* font-size: 14px; */
+  border-radius: 6px;
+  border: 1px solid;
 `;
 
 export const Text = styled.p`

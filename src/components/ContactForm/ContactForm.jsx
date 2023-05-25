@@ -66,6 +66,4 @@ function ContactForm({ addContact, contacts }) {
   );
 }
 
-
-
 export default ContactForm
