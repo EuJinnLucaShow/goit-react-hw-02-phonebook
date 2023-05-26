@@ -5,9 +5,13 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;  
   height: 100vh;
-  text-align: center;  
+  text-align: center    
 `;
 
 export const Title = styled.h1`
-  margin-bottom: 20px;
+  margin-top: 20px;  
+`;
+
+export const Heading2 = styled.h2`
+    /* display: block; */
 `;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ContactForm from "./ContactForm/ContactForm";
 import ContactList from "./ContactList/ContactList"
 import Filter from "./Filter/Filter"
-import { Container, Title } from './App.styled'
+import { Container, Title, Heading2 } from './App.styled'
 
 function App() { 
   const [contacts, setContacts] = useState([
@@ -31,7 +31,7 @@ function App() {
       <Title>Phonebook</Title>
       <ContactForm addContact={addContact} contacts={contacts} />
 
-      <h2>Contacts</h2>
+      <Heading2>Contacts</Heading2>
       <Filter filter={filter} setFilter={setFilter} />
       <ContactList contacts={filteredContacts} deleteContact={deleteContact} />
     </Container>
