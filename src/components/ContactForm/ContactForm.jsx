@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
+import Notiflix from 'notiflix';
 import { Form, Input, Button, Text } from './ContactForm.styled';
 
 class ContactForm extends Component {
@@ -34,7 +35,11 @@ class ContactForm extends Component {
       (contact) => contact.name.toLowerCase() === name.toLowerCase()
     );
     if (existingContact) {
-      alert('Contact with this name already exists!');
+      Notiflix.Report.warning(
+        'Alert',
+        'Contact with this name already exists!',
+        'Ok'
+      );      
       return;
     }
 
