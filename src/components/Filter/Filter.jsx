@@ -1,3 +1,4 @@
+import React from 'react';
 import { Input } from './Filter.styled'
 
 function Filter({ filter, setFilter }) {
