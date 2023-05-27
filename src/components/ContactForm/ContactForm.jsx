@@ -37,7 +37,7 @@ class ContactForm extends Component {
     if (existingContact) {
       Notiflix.Report.warning(
         'Alert',
-        'Contact with this name already exists!',
+        `Contact with name "${name}" already exists!`,
         'Ok'
       );      
       return;
