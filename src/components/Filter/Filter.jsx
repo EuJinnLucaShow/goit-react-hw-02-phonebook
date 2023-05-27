@@ -1,24 +1,19 @@
-import React, { Component } from 'react';
 import { Input } from './Filter.styled'
 
-class Filter extends Component {
-  handleFilterChange = (event) => {
-    this.props.setFilter(event.target.value);
+function Filter({ filter, setFilter }) {
+  const handleFilterChange = (event) => {
+    setFilter(event.target.value);
   };
 
-  render() {
-    const { filter } = this.props;
-
-    return (
-      <Input
-        type="text"
-        name="filter"
-        placeholder="Search by name"
-        value={filter}
-        onChange={this.handleFilterChange}
-      />
-    );
-  }
+  return (
+    <Input
+      type="text"
+      name="filter"
+      placeholder="Search by name"
+      value={filter}
+      onChange={handleFilterChange}
+    />
+  );
 }
 
-export default Filter;
+export default Filter

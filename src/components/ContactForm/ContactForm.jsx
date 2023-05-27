@@ -3,12 +3,10 @@ import { nanoid } from 'nanoid';
 import { Form, Input, Button, Text } from './ContactForm.styled';
 
 class ContactForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+  
+ state = {
       name: '',
-      number: '',
-    };
+      number: ''    
   }
 
   handleNameChange = (event) => {
